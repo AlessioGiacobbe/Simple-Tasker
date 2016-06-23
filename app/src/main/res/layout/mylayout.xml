@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/NameLayout"
+            >
+            <EditText
+                android:hint="Nome"
+                android:id="@+id/newName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NameLayout"
+
+            android:id="@+id/longitudelayout"
+            >
+            <EditText
+                android:hint="Longitudine"
+                android:id="@+id/LongitudeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:id="@+id/latitudelayout"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/longitudelayout"
+            >
+
+            <EditText
+                android:hint="Latitudine"
+                android:id="@+id/LatitudeEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/ActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:textColor="#455a64"
+                android:text="Aggiungi un'azione"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main"
+    tools:context="com.example.alessio.myapplication.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/lyt"
+        android:elevation="10dp"
+        >
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:clickable="true"
+            app:fab_addButtonColorNormal="@color/blutheme"
+            app:fab_addButtonColorPressed="@color/darkblue"
+            app:layout_anchor="@id/lyt"
+            app:layout_anchorGravity="bottom|right|end"
+            android:elevation="10dp"
+            android:src="@drawable/fab">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/hourfab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_icon="@drawable/ic_access_time_black_24dp"
+                app:fab_colorPressed="@color/grigino"
+                app:fab_title="evento orario"/>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/locationfab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fab_colorNormal="@color/white"
+                app:fab_icon="@drawable/ic_pin_drop_black_24dp"
+                app:fab_colorPressed="@color/grigino"
+                app:fab_title="evento posizione"/>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <LinearLayout
+        android:id="@+id/whitealph"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="invisible"
+        ></LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

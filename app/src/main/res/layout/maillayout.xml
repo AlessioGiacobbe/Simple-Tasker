@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout_root"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addresslayout"
+            >
+            <EditText
+                android:hint="Indirizzo"
+                android:id="@+id/mailaddres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titlelyt"
+            android:layout_below="@id/addresslayout"
+            >
+            <EditText
+                android:hint="Titolo"
+                android:id="@+id/mailtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlelyt"
+
+            android:id="@+id/contentlyt"
+            >
+            <EditText
+                android:hint="Contenuto"
+                android:id="@+id/mailcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

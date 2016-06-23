@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:theme="@style/Mytheme"
+    android:background="@color/grigino"
+    tools:showIn="@layout/activity_action_select_fab"
+    tools:context="com.example.alessio.myapplication.ActionSelect">
+
+
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/material_banner"
+        android:layout_gravity="top"
+        android:elevation="3dp"/>
+    <RelativeLayout
+        android:elevation="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/rlayout"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="105dp"
+        android:paddingBottom="45dp"
+        >
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:id="@+id/card_view_setting"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="4dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="260dp"
+                android:orientation="vertical"
+                android:id="@+id/fab_layout"
+                android:layout_height="match_parent"
+                >
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:padding="13dp"
+                android:weightSum="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blutheme"
+                    android:paddingLeft="4dp"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="32dp"
+                    android:text="Azioni"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#607d8b"/>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="13dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non disturbare"
+                        android:id="@+id/disturb"
+                        android:textColor="@color/blutheme"
+                        android:textSize="23dp"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Imposta luminosità"
+                        android:id="@+id/luminosity"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/blutheme"
+                        android:textSize="23dp"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Avvia un'applicazione"
+                        android:id="@+id/appStart"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/blutheme"
+                        android:textSize="23dp"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invia un messaggio"
+                        android:layout_marginTop="2dp"
+                        android:id="@+id/msgcheck"
+                        android:textColor="@color/blutheme"
+                        android:textSize="23dp"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Invia una mail"
+                        android:id="@+id/mailsend"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/blutheme"
+                        android:textSize="23dp"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blocca lo schermo"
+                        android:id="@+id/lockscreen"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/blutheme"
+                        android:textSize="23dp"
+                        />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Crea una notifica personalizzata"
+                        android:id="@+id/notify"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/blutheme"
+                        android:textSize="23dp"
+                        />
+                </LinearLayout>
+                </ScrollView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Azioni Root"
+                    android:layout_marginTop="7dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/blutheme"
+                    android:textSize="23dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="#607d8b"/>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modalità aereo"
+                    android:id="@+id/PlaneMode"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/blutheme"
+                    android:textSize="23dp"
+                    />
+                <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/batteryRisp"
+                            android:text="Avvia risparmio batteria"
+                            android:layout_marginTop="2dp"
+                            android:textColor="@color/blutheme"
+                            android:textSize="23dp" />
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

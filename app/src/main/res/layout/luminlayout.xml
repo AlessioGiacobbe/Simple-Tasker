@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lumi_layout_root"
+    android:padding="17dp">
+
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:dsb_min="1"
+        app:dsb_max="100"
+        app:dsb_progressColor="@color/blutheme"
+        app:dsb_trackColor="@color/blutheme"
+        app:dsb_indicatorColor="@color/blutheme"
+        android:id="@+id/seeklum"
+        />
+</LinearLayout>
