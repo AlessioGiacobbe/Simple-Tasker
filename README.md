@@ -1,7 +1,7 @@
 Simple-Tasker
 ========
 
-An easy to use and very simple tasking app, you can set a location or an hour to active a personalized task! [Steel under development].
+An easy to use and very simple tasking app, you can set a location or an hour to active a personalized task! [Still under development].
 
 How it Works?
 =
